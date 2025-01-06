@@ -1,26 +1,26 @@
-# Simple Portfolio Tracker
+# Portfolio Tracker
 
-This is a full-stack web application that allows users to manage their stock portfolio. Users can add, view, edit, and delete stock holdings, track the total portfolio value based on real-time stock prices, and view a dashboard displaying key portfolio metrics.
-
-## Features
-
-- **Add Stocks**: Input stock details such as name, symbol, quantity, and price.
-- **Edit Stocks**: Modify existing stock information.
-- **Delete Stocks**: Remove stocks from the portfolio.
-- **Responsive UI**: The application is mobile-friendly and styled with Tailwind CSS.
-- **Real-Time Stock Prices**: Fetches live stock prices using an API (integration planned).
-- **Backend**: Built with Java Spring Boot and MySQL.
+A comprehensive web application designed to help users manage their stock portfolios efficiently. Users can track holdings, update stock details, and analyze portfolio performance with real-time data.
 
 ---
 
-## Technologies Used
+## Key Features
 
-### Frontend
+- **Stock Management**: Add, edit, and delete stock holdings.
+- **Real-Time Tracking**: Planned integration with an API to fetch live stock prices.
+- **Intuitive Dashboard**: Displays key metrics and portfolio analytics.
+- **Responsive Design**: Tailwind CSS ensures a mobile-friendly user interface.
+
+---
+
+## Technologies
+
+**Frontend**
 - React.js
 - CSS
 - Tailwind CSS
 
-### Backend
+**Backend**
 - Java Spring Boot
 - MySQL
 
@@ -30,148 +30,144 @@ This is a full-stack web application that allows users to manage their stock por
 
 - Node.js and npm installed
 - Java Development Kit (JDK) installed
-- MySQL installed and running
+- MySQL server running
 - Maven installed
 
 ---
 
-## Getting Started
+## Setup Instructions
 
-### Backend Setup
+### Backend
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/VighneshVejandla/portifolioTracker
-   cd VighneshVejandla-portfolioTracker/backend
+   git clone https://github.com/SowmyaChitturi/portfolioTracker
+   cd SowmyaChitturi-portfolioTracker/backend
    ```
 
 2. Configure the MySQL database:
-   - Update the `application.properties` file located in `src/main/resources/` with your database credentials:
-     ```properties
-     spring.datasource.url=jdbc:mysql://localhost:3306/portfolio_tracker
-     spring.datasource.username=your_username
-     spring.datasource.password=your_password
-     spring.jpa.hibernate.ddl-auto=update
-     ```
+   Update the `application.properties` file under `src/main/resources/`:
+   ```properties
+   spring.datasource.url=jdbc:mysql://localhost:3306/portfolio_tracker
+   spring.datasource.username=your_username
+   spring.datasource.password=your_password
+   spring.jpa.hibernate.ddl-auto=update
+   ```
 
 3. Build and run the backend:
    ```bash
    mvn clean install
    mvn spring-boot:run
    ```
+   The backend runs at `http://localhost:8080`.
 
-4. The backend will run on `http://localhost:8080`.
+### Frontend
 
-### Frontend Setup
-
-1. Navigate to the frontend directory:
+1. Change to the frontend directory:
    ```bash
    cd ../frontend
    ```
 
-2. Install dependencies:
+2. Install required dependencies:
    ```bash
    npm install
    ```
 
-3. Start the development server:
+3. Launch the development server:
    ```bash
    npm start
    ```
-
-4. The frontend will run on `http://localhost:3000`.
+   The frontend runs at `http://localhost:3000`.
 
 ---
 
 ## Running the Application
 
-1. Ensure the backend is running (`http://localhost:8080`).
+1. Start the backend (`http://localhost:8080`).
 2. Start the frontend (`http://localhost:3000`).
-3. Open your browser and navigate to `http://localhost:3000` to interact with the application.
+3. Open `http://localhost:3000` in your browser to access the application.
 
 ---
 
-## Backend Directory Structure
+## Directory Structure
 
 ```
-└── VighneshVejandla-portfolioTracker/
-    └── backend/
-        ├── pom.xml
-        ├── src/
-            ├── main/
-                ├── java/
-                    └── com/
-                        └── portfolio/
-                            ├── App.java
-                            ├── controller/
-                                └── StockController.java
-                            ├── dto/
-                                └── StockDTO.java
-                            ├── exception/
-                                ├── GlobalExceptionHandler.java
-                                └── StockNotFoundException.java
-                            ├── model/
-                                └── Stock.java
-                            ├── repository/
-                                └── StockRepository.java
-                            ├── service/
-                                └── StockService.java
-                            └── resources/
-                                └── application.properties
-            ├── test/
-                └── java/
-                    └── com/
-                        └── portfolio/
-                            └── AppTest.java
+SowmyaChitturi-portfolioTracker/
+├── backend/
+│   ├── pom.xml
+│   ├── src/
+│   │   ├── main/
+│   │   │   ├── java/
+│   │   │   │   └── com/
+│   │   │   │       └── portfolio/
+│   │   │   │           ├── App.java
+│   │   │   │           ├── controller/
+│   │   │   │           │   └── StockController.java
+│   │   │   │           ├── dto/
+│   │   │   │           │   └── StockDTO.java
+│   │   │   │           ├── exception/
+│   │   │   │           │   ├── GlobalExceptionHandler.java
+│   │   │   │           │   └── StockNotFoundException.java
+│   │   │   │           ├── model/
+│   │   │   │           │   └── Stock.java
+│   │   │   │           ├── repository/
+│   │   │   │           │   └── StockRepository.java
+│   │   │   │           ├── service/
+│   │   │   │           │   └── StockService.java
+│   │   │   │           └── resources/
+│   │   │   │               └── application.properties
+│   │   ├── test/
+│   │   │   ├── java/
+│   │   │   │   └── com/
+│   │   │   │       └── portfolio/
+│   │   │   │           └── AppTest.java
 ```
 
 ---
 
-## API Endpoints
+## API Reference
 
-### Stock Management
+### Endpoints
 
-1. **Get All Stocks**
-   - URL: `/api/stocks`
-   - Method: `GET`
+#### Retrieve All Stocks
+- **URL**: `/api/stocks`
+- **Method**: GET
 
-2. **Add a Stock**
-   - URL: `/api/stocks`
-   - Method: `POST`
-   - Body:
-     ```json
-     {
-       "name": "Stock Name",
-       "symbol": "SYM",
-       "quantity": 10,
-       "price": 100.50
-     }
-     ```
+#### Add a New Stock
+- **URL**: `/api/stocks`
+- **Method**: POST
+- **Body**:
+  ```json
+  {
+    "name": "Stock Name",
+    "symbol": "SYM",
+    "quantity": 10,
+    "price": 100.50
+  }
+  ```
 
-3. **Update a Stock**
-   - URL: `/api/stocks/{id}`
-   - Method: `PUT`
-   - Body:
-     ```json
-     {
-       "name": "Updated Name",
-       "symbol": "USYM",
-       "quantity": 20,
-       "price": 150.75
-     }
-     ```
+#### Update Stock Information
+- **URL**: `/api/stocks/{id}`
+- **Method**: PUT
+- **Body**:
+  ```json
+  {
+    "name": "Updated Name",
+    "symbol": "USYM",
+    "quantity": 20,
+    "price": 150.75
+  }
+  ```
 
-4. **Delete a Stock**
-   - URL: `/api/stocks/{id}`
-   - Method: `DELETE`
-
----
-
-
-## Future Enhancements
-
-- Integration with a real-time stock price API.
-- Dashboard with advanced analytics.
-- User authentication and authorization.
+#### Remove a Stock
+- **URL**: `/api/stocks/{id}`
+- **Method**: DELETE
 
 ---
+
+## Future Improvements
+
+- Integration with real-time stock price APIs.
+- Advanced portfolio analytics and visualizations.
+- User authentication and role-based access control.
+
