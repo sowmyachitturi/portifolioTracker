@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 10px;
+    overflow-x: hidden;  /* Prevent horizontal scroll */
+    overflow-y: scroll;  /* Allow vertical scroll but hide scrollbar */
+    height: 100%;  /* Ensure body takes full height */
+    background-color: #f4f4f4;  /* Optional: Set a background color */
+  }
+  
+  body::-webkit-scrollbar {
+    display: none;  /* Hide the scrollbar in webkit browsers (Chrome, Safari) */
+  }
+
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dimmed background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close-button:hover {
+    color: red;
+  }
+  

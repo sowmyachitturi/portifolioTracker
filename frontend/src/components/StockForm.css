@@ -1,0 +1,90 @@
+/* Form styling */
+.stock-form {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: "Arial", sans-serif;
+}
+
+.stock-form input {
+  width: 90%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: "Arial", sans-serif;
+  transition: all 0.3s ease-in-out;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stock-form input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.4);
+  background-color: #eaf4ff;
+}
+
+.stock-form input:hover {
+  border-color: #0056b3;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.stock-form input::placeholder {
+  color: #888;
+  font-style: italic;
+}
+
+.stock-form input:focus::placeholder {
+  color: #007bff;
+}
+
+.stock-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.stock-form button:hover {
+  background-color: #0056b3;
+}
+
+.stock-form .button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.stock-form .button-group button {
+  width: 48%;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.stock-form .cancel-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.stock-form .cancel-btn:hover {
+  background-color: #e41f19;
+}
+
+.stock-form .button-group button:hover {
+  transform: scale(1.05); /* Button hover effect */
+}
+

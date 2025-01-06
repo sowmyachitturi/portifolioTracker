@@ -1,0 +1,8 @@
+/Users/harshini/Documents/CapeX/portifolioTracker/backend/src/main/java/com/portfolio/repository/StockRepository.java
+/Users/harshini/Documents/CapeX/portifolioTracker/backend/src/main/java/com/portfolio/model/Stock.java
+/Users/harshini/Documents/CapeX/portifolioTracker/backend/src/main/java/com/portfolio/controller/StockController.java
+/Users/harshini/Documents/CapeX/portifolioTracker/backend/src/main/java/com/portfolio/dto/StockDTO.java
+/Users/harshini/Documents/CapeX/portifolioTracker/backend/src/main/java/com/portfolio/exception/StockNotFoundException.java
+/Users/harshini/Documents/CapeX/portifolioTracker/backend/src/main/java/com/portfolio/exception/GlobalExceptionHandler.java
+/Users/harshini/Documents/CapeX/portifolioTracker/backend/src/main/java/com/portfolio/App.java
+/Users/harshini/Documents/CapeX/portifolioTracker/backend/src/main/java/com/portfolio/service/StockService.java

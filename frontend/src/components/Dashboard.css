@@ -1,0 +1,208 @@
+/* .dashboard {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 25px;
+  background: linear-gradient(145deg, #ffffff, #f7f7f7);
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  font-family: "Arial", sans-serif;
+  transition: all 0.3s ease;
+  border: 1px solid #e0e0e0;
+}
+
+.dashboard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.dashboard h2:hover {
+  color: #007bff;
+}
+
+.dashboard p {
+  font-size: 1.2rem;
+  color: #555;
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.dashboard p strong {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.dashboard .total-value {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #28a745;
+  margin: 20px 0;
+  background: linear-gradient(145deg, #28a745, #2c9f5e);
+  padding: 5px;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard .top-performing-stock {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #ff6347;
+}
+
+.dashboard .top-performing-stock span {
+  font-weight: normal;
+  color: #555;
+}
+
+.dashboard .distribution {
+  font-size: 1.3rem;
+  color: #333;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .dashboard {
+    padding: 20px;
+  }
+
+  .dashboard h2 {
+    font-size: 1.7rem;
+  }
+
+  .dashboard p {
+    font-size: 1.1rem;
+  }
+} */
+
+
+
+.dashboard {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 30px;
+  background: linear-gradient(135deg, #f6f9fc 0%, #ffffff 100%);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1), 0 1px 8px rgba(0, 0, 0, 0.05);
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.dashboard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15), 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard h2 {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 25px;
+  color: #2c3e50;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: color 0.3s ease;
+  background: linear-gradient(45deg, #3498db, #2980b9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dashboard h2:hover {
+  background: linear-gradient(45deg, #2980b9, #3498db);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dashboard p {
+  font-size: 1.2rem;
+  color: #34495e;
+  margin: 12px 0;
+  line-height: 1.7;
+}
+
+.dashboard p strong {
+  color: #3498db;
+  font-weight: 600;
+}
+
+.dashboard .total-value {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 25px 0;
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+  padding: 10px 15px;
+  border-radius: 50px;
+  box-shadow: 0 4px 15px rgba(46, 204, 113, 0.3);
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.dashboard .total-value:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(46, 204, 113, 0.4);
+}
+
+.dashboard .top-performing-stock {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #e74c3c;
+  background: linear-gradient(135deg, #ffedea, #ffcccb);
+  padding: 8px 15px;
+  border-radius: 12px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.dashboard .top-performing-stock:hover {
+  transform: translateX(5px);
+}
+
+.dashboard .top-performing-stock span {
+  font-weight: normal;
+  color: #7f8c8d;
+}
+
+.dashboard .distribution {
+  font-size: 1.3rem;
+  color: #2c3e50;
+  margin-top: 25px;
+  padding: 15px;
+  background: rgba(236, 240, 241, 0.6);
+  border-radius: 12px;
+  border-left: 5px solid #3498db;
+}
+
+@media (max-width: 768px) {
+  .dashboard {
+    padding: 25px;
+  }
+
+  .dashboard h2 {
+    font-size: 2rem;
+  }
+
+  .dashboard p {
+    font-size: 1.1rem;
+  }
+
+  .dashboard .total-value {
+    font-size: 1.6rem;
+  }
+
+  .dashboard .top-performing-stock {
+    font-size: 1.3rem;
+  }
+}
